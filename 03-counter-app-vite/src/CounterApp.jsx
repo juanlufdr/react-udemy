@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { useDeferredValue, useState } from 'react';
+import { useState } from 'react';
 
 export const CounterApp = ({ value }) => {
 
@@ -16,7 +16,7 @@ export const CounterApp = ({ value }) => {
   }
   
   const handleReset = () => {
-    setCounter ( useDeferredValue);
+    setCounter ( value);
   }
 
   return (
