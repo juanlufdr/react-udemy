@@ -32,10 +32,5 @@ describe('Pruebas en FirstApp', () => {
         const {getByText} = render(<FirstApp title={title} subtitle= {subtitle}/>)
         
         expect(getByText(subtitle)).toBeTruthy();
-
-        // const h1 = container.querySelector('h1');
-        // expect(h1.innerHTML).toContain(title);
-
-        // expect(getByTestId('test-title').innerHTML).toContain(title);
     })
 })
